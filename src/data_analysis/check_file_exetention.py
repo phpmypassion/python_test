@@ -9,5 +9,7 @@ def zip_files(search_directory, selected_extensions, output_path):
         # Create a ZipFile Object
         zipObj2.write(os.path.join(search_directory, file))
 
+  return zipObj2
+
 if __name__ == '__main__':
-  zip_files('csv', ['.jpg', '.csv'], 'my_stuff.zip')
+  zip_files('./csv', ['.jpg', '.csv'], 'my_stuff.zip')

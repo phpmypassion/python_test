@@ -13,7 +13,7 @@ def csv_merge(list_of_csv_file, output_path):
   output_data = pd.concat(l)
   output_data.to_csv('csv/'+output_path, columns=['Name', 'Midterm','Lab','Final'])
 
-  print(output_path)
+  return output_data
 
 if __name__ == '__main__':
   csv_merge(['class1.csv', 'class2.csv'], 'all_students.csv')
